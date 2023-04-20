@@ -7,18 +7,248 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 style="color: chartreuse;">
-        <?php
-        echo 'Ejercicio 1.a <br>';
-        echo semaforo_a('rojo');
-        echo '<br>';
-        ?>
-    </h1>
-    </body>
+    <main class="pt-5">
+        <h1 class="text-center">Gentile Aumente, Alan</h1>
+
+        <div class="pt-2 m-auto pb-2 ps-1 pe-1 ejercicio">
+            <h2 class="text-center">Ejercicio 1</h2>
+            <h4 class="text-center">Semáforo</h4>
+            <p class="enunciado text-center">
+                Cree una función llamada Semaforo, que recibe por parametro un cólor cómo texto (“rojo”
+                “amarillo”,”verde”). Dicha función devolverá el estado que corresponde: “frene”, “precaución”,
+                “avance” o “estado desconocido” ante un caso no esperado.
+            </p>
+
+            <p class="enunciado text-left ms-5">
+                a) función semaforo_a($color): Resuelva la solución utilizando <b>if else</b><br>
+                b) función semaforo_b($color): Resuelva la solución utilizando <b>if inline (return ?: )</b><br>
+                c) función semaforo_c($color): Resuelva la solución utilizando <b>switch</b>
+            </p>
+
+            <div class="row ejercicio-resultado pt-2 pb-2" style="justify-content: space-around;">
+                <div class="col-auto">
+                    <h5>Ejercicio 1.a</h5>
+                    <p class="mb-1"><b>Input</b>: 'rojo'</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php echo semaforo_a('rojo');?>
+                    </p>
+                </div>
+
+                <div class="col-auto">
+                    <h5>Ejercicio 1.b</h5>
+                    <p class="mb-1"><b>Input</b>: 'verde'</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php echo semaforo_a('verde');?>
+                    </p>
+                </div>
+
+                <div class="col-auto">
+                    <h5>Ejercicio 1.c</h5>
+                    <p class="mb-1"><b>Input</b>: 'amarillo'</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php echo semaforo_a('amarillo');?>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-2 m-auto pb-2 ps-1 pe-1 ejercicio">
+            <h2 class="text-center">Ejercicio 2</h2>
+            <h4 class="text-center">Binomio cuadrado perfecto</h4>
+
+            <p class="enunciado text-center">
+                Cree una función llamada binomioCuadradoPerfecto que realice la ecuación de dicha problemática:
+                recibe dos parámetros y devuelve el cuadrado de la suma de ambos <b>(a+b)<sup>2</sup></b>
+            </p>
+
+            <p class="enunciado text-left ms-5 mb-0 ">
+                a) función binomioCuadradoPerfecto_a($a, $b): Resuelva la solución utilizando la función de
+                potencia <br>
+                b) función binomioCuadradoPerfecto_b($a, $b): Resuelva la solución utilizando la fórmula
+                desarrollada del binomio: <br> <b> a<sup>2</sup> + 2 * a * b + b<sup>2</sup> </b>
+            </p>
+
+
+            <div class="row ejercicio-resultado pt-2 pb-2" style="justify-content: space-around;">
+                <div class="col-auto">
+                    <h5 class="text-center">Ejercicio 2.a</h5>
+                    <p class="mb-1"><b>Input</b>: (2, 3)</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php echo binomioCuadradoPerfecto_a(2, 3);?>
+                    </p>
+                </div>
+
+                <div class="col-auto">
+                    <h5 class="text-center">Ejercicio 2.b</h5>
+                    <p class="mb-1"><b>Input</b>: (2, 3)</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php echo binomioCuadradoPerfecto_a(2, 3);?>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-2 m-auto pb-2 ps-1 pe-1 ejercicio">
+            <h2 class="text-center">Ejercicio 3</h2>
+            <h4 class="text-center">Concatenar textos</h4>
+
+            <p class="enunciado text-center">
+                Cree una función concatenar($texto1, $texto2) que reciba dos textos como parámetro y devuelva
+                ambos textos concatenados como uno solo.
+
+            </p>
+
+
+            <div class="row ejercicio-resultado pt-2 pb-2" style="justify-content: space-around;">
+                <div class="col-auto">
+                    <h5 class="text-center">Ejercicio 3</h5>
+                    <p class="mb-1"><b>Input</b>: ('Hola', 'Mundo')</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php echo concatenar_texto('Hola ', 'Mundo');?>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-2 m-auto pb-2 ps-1 pe-1 ejercicio">
+            <h2 class="text-center">Ejercicio 4</h2>
+            <h4 class="text-center">Incrementar</h4>
+
+            <p class="enunciado text-center">
+                Cree una función llamada incrementar, que reciba una variable y sin devolver nada como retorno de
+                la función, el valor del parámetro haya sido incrementado en 1
+            </p>
+
+
+            <div class="row ejercicio-resultado pt-2 pb-2" style="justify-content: space-around;">
+                <div class="col-auto text-center">
+                    <h5>Ejercicio 3</h5>
+                    <p class="mb-1"><b>Input</b>: 5</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php   $var_ej4 = 5;
+                                incrementar($var_ej4);
+                                echo 'El valor de la variables es: ' . $var_ej4;?>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-2 m-auto pb-2 ps-1 pe-1 ejercicio">
+            <h2 class="text-center">Ejercicio 5</h2>
+            <h4 class="text-center">Sumatoria</h4>
+
+            <p class="enunciado text-center">
+                Cree una función sumatoria que reciba un vector cómo parámetro, y devuelva la suma de todos sus
+                valores
+            </p>
+
+            <p class="enunciado text-left ms-5">
+                a) función sumatoria_a( $array ): Resuelva la solución utilizando la estructura de control <b>for</b>
+                <br>
+                b) función sumatoria_b( $array ): Resuelva la solución utilizando la estructura <b>for each</b> <br>
+                c) función sumatoria_c( $array ): Resuelva la solución utilizando la estructura de control <b>while</b>
+
+            </p>
+
+
+            <div class="row ejercicio-resultado pt-2 pb-2" style="justify-content: space-around;">
+                <div class="col-auto text-center">
+                    <h5>Ejercicio 5.a</h5>
+                    <p class="mb-1"><b>Input</b>: [5,5,10,5]</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php echo sumatoria_a([5,5,10,5]);?>
+                    </p>
+                </div>
+
+                <div class="col-auto text-center">
+                    <h5>Ejercicio 5.b</h5>
+                    <p class="mb-1"><b>Input</b>: [10,10,10,10]</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php echo sumatoria_a([10,10,10,10]);?>
+                    </p>
+                </div>
+
+                <div class="col-auto text-center">
+                    <h5>Ejercicio 5.c</h5>
+                    <p class="mb-1"><b>Input</b>: [25,25,25,25]</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php echo sumatoria_a([25,25,25,25]);?>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="pt-2 m-auto pb-2 ps-1 pe-1 ejercicio">
+            <h2 class="text-center">Ejercicio 6</h2>
+            <h4 class="text-center">Nombre completo</h4>
+
+            <p class="enunciado text-center">
+                Cree una clase llamada Saludar, la misma tendrá un constructor que reciba nombre, apellido de una
+                persona. <br>
+                Dicha clase debe implementar el método saludoFormal( $horario ) el cual debe responder
+                concatenado al nombre un prefijo dependiendo del horario:
+            </p>
+
+            <p class="enunciado text-center">
+                <b> 05hs</b> a <b>13hs</b> “Buenos días” <br>
+                <b>13hs</b> a <b>21hs</b> “Buenas tardes” <br>
+                <b>21h</b> a <b>05hs</b> “Buenas noches” <br>
+
+
+            </p>
+
+            <p class="enunciado text-center">
+                Ejemplo: Para clase instanciada para Ezequiel Perez, y parámetro 9hs: <b>“Buenos días Ezequiel
+                    Perez”</b>
+            </p>
+
+            <p class="enunciado text-center">Dicha clase debe implementar también el método saludoInformal( $horario )
+                el cual debe responder
+                sin el apellido, iniciando con un “hola” por delante y al finalizar concatenar “que tengas un ...”
+                saludo
+                perteneciente al horario .</p>
+
+            <p class="enunciado text-center"> Ejemplo: Para clase instanciada para Ezequiel Perez, y parámetro 9hs: <br>
+                <b> “¡Hola Ezequiel! Que tengas un buen día”</b>
+            </p>
+
+
+            <div class="row ejercicio-resultado pt-2 pb-2" style="justify-content: space-around;">
+                <div class="col-auto text-center">
+                    <h5>Ejercicio 6.a</h5>
+                    <p class="mb-1"><b>Input</b>: ('Alan', 'Gentile') & 23</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php   $saludo = new Saludar('Alan', 'Gentile');
+                                echo 'Saludo Formal: ' . $saludo->SaludoFormal(23);?>
+                    </p>
+                </div>
+                <div class="col-auto text-center">
+                    <h5>Ejercicio 6.b</h5>
+                    <p class="mb-1"><b>Input</b>: ('Alan', 'Gentile') & 6</p>
+                    <p class="mb-1"><b>Output</b>:
+                        <?php   $saludo = new Saludar('Alan', 'Gentile');
+                        echo 'Saludo Informal: ' . $saludo->SaludoInformal(6);?>
+                    </p>
+                </div>
+            </div>
+
+
+    </main>
+</body>
 
 <script src="/Bootstrap/bootstrap.bundle.min.js"></script>
 
 </html>
+
+
+<!-- <?php
+            echo 'Ejercicio 1.a <br>';
+            echo semaforo_a('rojo');
+            echo '<br>';
+            ?> -->

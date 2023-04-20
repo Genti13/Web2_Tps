@@ -1,0 +1,8 @@
+.ejercicio{
+    width: 50%;
+}
+
+.ejercicio-resultado{
+    background-color: rgb(185, 185, 185);
+    border-radius: 5px;
+}
